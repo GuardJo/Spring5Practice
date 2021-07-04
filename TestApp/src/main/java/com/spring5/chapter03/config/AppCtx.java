@@ -36,8 +36,9 @@ public class AppCtx {
     @Bean
     public MemberInfoPrinter memberInfoPrinter() {
         MemberInfoPrinter memberInfoPrinter = new MemberInfoPrinter();
-        memberInfoPrinter.setMemberPrinter(memberPrinter());
-        memberInfoPrinter.setMemberDao(memberDao());
+        // AutoWried
+//        memberInfoPrinter.setMemberPrinter(memberPrinter());
+//        memberInfoPrinter.setMemberDao(memberDao());
         return memberInfoPrinter;
     }
 

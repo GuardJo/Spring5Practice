@@ -1,9 +1,9 @@
 package com.spring5.chapter03.main;
 
 import com.spring5.chapter03.*;
-import com.spring5.chapter03.config.AppCtx;
 import com.spring5.chapter03.config.AppCtx1;
 import com.spring5.chapter03.config.AppCtx2;
+import com.spring5.chapter03.config.AppCtx1_1;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -31,20 +31,16 @@ public class MainForSpring2 {
             if (command.startsWith("new ")) {
                 processNewCommand(command.split(" "));
                 continue;
-            }
-            else if (command.startsWith("change ")) {
+            } else if (command.startsWith("change ")) {
                 processChangeCommand(command.split(" "));
                 continue;
-            }
-            else if (command.equalsIgnoreCase("list")) {
+            } else if (command.equalsIgnoreCase("list")) {
                 processListCommand();
                 continue;
-            }
-            else if (command.startsWith("info ")) {
+            } else if (command.startsWith("info ")) {
                 processInfoCommand(command.split(" "));
                 continue;
-            }
-            else if (command.equalsIgnoreCase("version")) {
+            } else if (command.equalsIgnoreCase("version")) {
                 processVersionCommand();
                 continue;
             }

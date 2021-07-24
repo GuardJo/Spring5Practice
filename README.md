@@ -13,3 +13,6 @@ Chapter03
 
 Chapter04
 - https://trapezoidal-curiosity-d38.notion.site/Chapter04-9888694252f546a4a12abe23a792d252
+
+Chapter05
+- https://trapezoidal-curiosity-d38.notion.site/Chapter05-ab9aa410cb5543f0b84d5fbe708a1346

@@ -16,3 +16,6 @@ Chapter04
 
 Chapter05
 - https://trapezoidal-curiosity-d38.notion.site/Chapter05-ab9aa410cb5543f0b84d5fbe708a1346
+
+Chapter06
+- https://trapezoidal-curiosity-d38.notion.site/Chapter06-Bean-ee5a6f4a29e843e4ba696cd722a48411

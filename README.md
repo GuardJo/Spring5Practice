@@ -22,3 +22,9 @@ Chapter06
 
 Chapter07
 - https://trapezoidal-curiosity-d38.notion.site/Chapter07-AOP-5c562205474c4777b5414900bee589c5
+
+Chapter08
+- https://trapezoidal-curiosity-d38.notion.site/Chapter08-DB-653877e8b99744f3a4fe03d12a82dc24
+
+Chapter09
+- https://trapezoidal-curiosity-d38.notion.site/Chapter09-MVC-69101d46f6774e0d8a243f52cac6e5ad

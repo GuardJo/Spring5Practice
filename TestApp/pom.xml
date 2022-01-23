@@ -10,8 +10,8 @@
 	</parent>
 	<groupId>com.spring5</groupId>
 	<artifactId>TestApp</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
-	<name>TestApp</name>
+	<version>0.0.3-SNAPSHOT</version>
+	<name>Chapter11</name>
 	<description>Demo project for Spring Boot</description>
 	<packaging>war</packaging>
 	<properties>
@@ -45,7 +45,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>5.2.9.RELEASE</version>
+			<version>5.3.7</version>
 		</dependency>
 		<dependency>
 			<groupId>org.aspectj</groupId>
@@ -72,6 +72,11 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
+			<version>5.0.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
 			<version>5.0.2.RELEASE</version>
 		</dependency>
 		<dependency>

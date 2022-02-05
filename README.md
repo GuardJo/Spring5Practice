@@ -34,3 +34,6 @@ Chapter10
 
 Chapter11
 - https://trapezoidal-curiosity-d38.notion.site/Chapter11-MVC-1-c33392bd8b3f4057a96cce833d2b6f5e
+
+Chapter12
+- https://trapezoidal-curiosity-d38.notion.site/Chatper12-MVC-2-f09e87cb509b455cbbe0bca94544bb1c

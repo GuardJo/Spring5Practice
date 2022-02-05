@@ -10,8 +10,8 @@
 	</parent>
 	<groupId>com.spring5</groupId>
 	<artifactId>TestApp</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
-	<name>Chapter11</name>
+	<version>0.0.4-SNAPSHOT</version>
+	<name>Chapter12</name>
 	<description>Demo project for Spring Boot</description>
 	<packaging>war</packaging>
 	<properties>
@@ -97,6 +97,16 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>1.7.30</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.4.2.Final</version>
 		</dependency>
 	</dependencies>
 

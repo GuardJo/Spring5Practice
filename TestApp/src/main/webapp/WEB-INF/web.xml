@@ -23,6 +23,7 @@
                 com.spring5.chapter11.config.MemberConfig
                 com.spring5.chapter11.config.MvcConfig3
                 com.spring5.chapter11.config.ControllerConfig3
+                com.spring5.chapter12.config.MvcConfig4
             </param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>

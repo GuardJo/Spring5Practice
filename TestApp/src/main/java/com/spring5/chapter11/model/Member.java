@@ -66,4 +66,13 @@ public class Member {
             this.password = newPassword;
         }
     }
+
+    /**
+     * 패스워드 일치 여부 확인
+     * @param password
+     * @return
+     */
+    public boolean matchPasseword(String password) {
+        return this.password.equals(password);
+    }
 }

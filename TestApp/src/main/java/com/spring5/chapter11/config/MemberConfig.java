@@ -6,6 +6,7 @@ import com.spring5.chapter11.model.MemberRegistRequest;
 import com.spring5.chapter11.service.ChangePasswordService;
 import com.spring5.chapter11.model.MemberDao;
 import com.spring5.chapter11.service.MemberRegisterService;
+import com.spring5.chapter13.service.AuthService;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -72,5 +73,13 @@ public class MemberConfig {
         MemberRegistRequest memberRegistRequest = new MemberRegistRequest();
 
         return memberRegistRequest;
+    }
+
+    @Bean
+    public AuthService authService() {
+        AuthService authService = new AuthService();
+        authService.setMemberDao(memberDao());
+
+        return authService;
     }
 }

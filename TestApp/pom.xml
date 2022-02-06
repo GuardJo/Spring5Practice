@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.spring5</groupId>
 	<artifactId>TestApp</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>0.0.5-SNAPSHOT</version>
 	<name>Chapter12</name>
 	<description>Demo project for Spring Boot</description>
 	<packaging>war</packaging>
@@ -126,6 +126,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>SpringAPP5</finalName>
 	</build>
 
 </project>

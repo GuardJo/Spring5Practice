@@ -1,34 +1,61 @@
 package com.spring5.chapter11.model;
 
-import com.spring5.chapter11.model.Member;
 import com.spring5.chapter11.service.MemberRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 
 import javax.sql.DataSource;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class MemberDao {
     private JdbcTemplate jdbcTemplate;
+    private RowMapper<Member> memberRowMapper= new RowMapper<Member>() {
+        @Override
+        public Member mapRow(ResultSet resultSet, int i) throws SQLException {
+            Member member = new Member(
+                    resultSet.getString("EMAIL"),
+                    resultSet.getString("PASSWORD"),
+                    resultSet.getString("NAME"),
+                    resultSet.getTimestamp("REGDATE").toLocalDateTime()
+            );
+            member.setId(resultSet.getLong("ID"));
+            return member;
+        }
+    };
 
     public MemberDao(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
     public Member selectByEmail(String email) {
+        List<Member> results = jdbcTemplate.query("select * from MEMBER where EMAIL = ?", memberRowMapper, email);
+        return results.isEmpty() ? null : results.get(0);
+    }
+
+    public List<Member> selectByRegdate(LocalDateTime from, LocalDateTime to) {
+        List<Member> results = jdbcTemplate.query("select * from MEMBER where REGDATE between ? and ? " +
+                "order by REGDATE desc", memberRowMapper, from, to);
+
+        return results;
+    }
+
+    public Member selectById(Long memberId) {
         List<Member> results = jdbcTemplate.query(
-                "select * from MEMBER where EMAIL = ?",
-                new MemberRowMapper(), email);
+                "select * from MEMBER where ID = ?", memberRowMapper, memberId
+        );
+
         return results.isEmpty() ? null : results.get(0);
     }
 
     public List<Member> selectAll() {
-        List<Member> results = jdbcTemplate.query(
-                "select * from MEMBER",
-                new MemberRowMapper());
+        List<Member> results = jdbcTemplate.query("select * from MEMBER", memberRowMapper);
         return results;
     }
 

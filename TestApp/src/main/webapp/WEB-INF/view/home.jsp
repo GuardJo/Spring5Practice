@@ -20,6 +20,11 @@
         <button type="submit">인사2</button>
     </form>
 </div>
+<div>
+    <form action="members" method="post">
+        <button type="submit">회원검색</button>
+    </form>
+</div>
 <c:if test="${empty authInfo}">
     <p>환영합니다</p>
     <div>

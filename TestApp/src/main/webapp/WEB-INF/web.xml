@@ -26,6 +26,7 @@
                 com.spring5.chapter12.config.MvcConfig4
                 com.spring5.chapter13.config.ControllerConfig4
                 com.spring5.chapter13.config.MvcConfig5
+                com.spring5.chapter14.config.ControllerConfig5
             </param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>

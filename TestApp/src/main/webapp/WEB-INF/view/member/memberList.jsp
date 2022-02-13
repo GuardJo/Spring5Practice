@@ -25,6 +25,10 @@
     </p>
 </form:form>
 
+<form action="members/all" method="post">
+    <input type="submit" value="전체 조회">
+</form>
+
 <c:if test="${!empty members}">
     <table>
         <tr>

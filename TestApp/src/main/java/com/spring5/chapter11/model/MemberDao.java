@@ -73,6 +73,10 @@ public class MemberDao {
         );
     }
 
+    public void delete(Long memberId) {
+        jdbcTemplate.update("delete from MEMBER where ID = ?", memberId);
+    }
+
     public void insert(Member member) {
         // Key값을 담을 KeyHolder 객체 생성
         KeyHolder keyHolder = new GeneratedKeyHolder();

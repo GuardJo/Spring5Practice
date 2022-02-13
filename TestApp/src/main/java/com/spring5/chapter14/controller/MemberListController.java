@@ -31,4 +31,12 @@ public class MemberListController {
 
         return "member/memberList";
     }
+
+    @RequestMapping("/members/all")
+    public String allList(@ModelAttribute("command")ListCommand listCommand, Model model) {
+        List<Member> members = memberDao.selectAll();
+        model.addAttribute("members", members);
+
+        return "member/memberList";
+    }
 }

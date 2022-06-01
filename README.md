@@ -3,10 +3,8 @@
 Chapter01
 - https://www.notion.so/Chapter01-aa767a80f7ad47399924b34825fd50fd
 
-
 Chapter02
 - https://www.notion.so/Chapter02-408299313258463187964432ca35df58
-
 
 Chapter03
 - https://www.notion.so/Chapter03-DI-4483e73110d3469d82497b00dadd229a
@@ -45,4 +43,7 @@ Chapter14
 - https://www.notion.so/Chapter-14-MVC-4-PathVariable-83f5ebe29dc4404186733f2cb1258def
 
 Chapter15
-- https://www.notion.so/Chapter15-fa3b516bfa384f7d8adb15b583479777
+- https://trapezoidal-curiosity-d38.notion.site/Chapter15-fa3b516bfa384f7d8adb15b583479777
+
+Chapter16
+- https://trapezoidal-curiosity-d38.notion.site/Chapter-16-JSON-7a7733b427e34cd0a67718a1b46a732d

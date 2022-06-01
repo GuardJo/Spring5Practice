@@ -28,6 +28,8 @@
                 com.spring5.chapter13.config.MvcConfig5
                 com.spring5.chapter14.config.ControllerConfig5
                 com.spring5.chapter15.config.ControllerConfig6
+                com.spring5.chapter16.config.ControllerConfig
+                com.spring5.chapter16.config.MvcConfig
             </param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>

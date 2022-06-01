@@ -1,5 +1,7 @@
 package com.spring5.chapter11.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.spring5.chapter11.exception.WrongidPasswordException;
 
 import java.time.LocalDateTime;
@@ -7,8 +9,11 @@ import java.time.LocalDateTime;
 public class Member {
     private Long id;
     private String email;
+    @JsonIgnore
     private String password;
     private String name;
+//    @JsonFormat(shape = JsonFormat.Shape.STRING)
+    @JsonFormat(pattern = "yyyyMMdd HHmmss")
     private LocalDateTime registerDateTime;
 
     public Member(String email, String password, String name, LocalDateTime regDateTime) {
